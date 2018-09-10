@@ -39,19 +39,20 @@ int main(int argc, const char * argv[]) {
             }else if ([option isEqualToString:@"list"]){
                 NSLog(@"%@", contactList);
             
-            }else if([option isEqualToString:@"find"]){
-                [[InputHistory inputHistory]addObject:option];
-                NSString *search = [InputHandler getUserInputWithLength:255 withPrompt:@"Enter the search word"];
-                Contact *result = [contactList findContact:search];
-                if(result != nil){
-                    NSLog(@"<%@> (%@)",[result name],[result email]);
-                }else{
-                    NSLog(@"%@", @"Not found");
-                }
-            }else if([option isEqualToString:@"history"]){
-                NSLog(@"%@", InputHistory);
-                [[InputHistory inputHistory]addObject:option];
-            }
+//            }else if([option isEqualToString:@"find"]){
+//
+//                [[InputHistory inputHistory]addObject:option];
+//                NSString *search = [InputHandler getUserInputWithLength:255 withPrompt:@"Enter the search word"];
+//                Contact *result = [contactList findContact:search];
+//                if(result != nil){
+//                    NSLog(@"<%@> (%@)",[result name],[result email]);
+//                }else{
+//                    NSLog(@"%@", @"Not found");
+//                }
+//            }else if([option isEqualToString:@"history"]){
+//                NSLog(@"%@", InputHistory);
+//                [[InputHistory inputHistory]addObject:option];
+//            }
         }
     }
     

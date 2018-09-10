@@ -11,8 +11,7 @@
 @implementation InputHandler
 
 + (NSString *)getUserInputWithLength:(int) maxLength widthPrompt : (NSString* )prompt{
-    // get c string
-    // get rid of whitespaces
+
     
     if(maxLength< 1){
         maxLength = 255;
